@@ -10,6 +10,6 @@ CREATE TABLE schedule (
     timeslotid INTEGER NOT NULL,
     FOREIGN KEY (coursecode) REFERENCES courses(code),
     FOREIGN KEY (roomid) REFERENCES room(id),
-    FOREIGN KEY (timeslotid) REFERENCES timeslots(id)),
-    CONSTRAINT unique_room_time UNIQUE (roomid, timeslotid);
+    FOREIGN KEY (timeslotid) REFERENCES timeslots(id),
+    CONSTRAINT unique_room_time UNIQUE (roomid, timeslotid));
   
