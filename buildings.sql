@@ -4,6 +4,7 @@ CREATE TABLE buildings (
     shortname VARCHAR(10) UNIQUE );
 
 CREATE TABLE rooms (
+    id INTEGER PRIMARY KEY, --extra
     number INTEGER,
     buildingid INTEGER,
     seating INTEGER,
