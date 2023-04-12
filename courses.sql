@@ -1,9 +1,9 @@
 DROP TABLE IF EXISTS courses;
 CREATE TABLE courses (
     code VARCHAR(40) NOT NULL CHECK (LENGTH(code) >= 7),
-    description VARCHAR(400),
     start DATE NOT NULL,
     end DATE NOT NULL CHECK (end > start),
+    description VARCHAR(400),
     PRIMARY KEY (code));
 INSERT INTO courses (code, start, end, description) VALUES
     ('INFO330A', '2023-04-01', '2023-06-01', 'Data and databases'),
