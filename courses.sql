@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS courses;
+
 CREATE TABLE courses (
     code VARCHAR(40) NOT NULL CHECK (LENGTH(code) >= 7),
     start DATE NOT NULL,
