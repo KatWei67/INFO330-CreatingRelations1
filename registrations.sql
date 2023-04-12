@@ -6,12 +6,12 @@ CREATE TABLE student_courses (
     FOREIGN KEY (course) REFERENCES courses(code),
     PRIMARY KEY (id, course));
 
-INSERT INTO student_courses (studentid, course) VALUES
+INSERT INTO student_courses (id, course) VALUES
     (1, 'INFO330A'),
     (1, 'INFO448A'),
-    (1, 'INFO314'),
-    (2, 'INFO330A'),
-    (2, 'INFO449A'),
-    (3, 'BAW010'),
-    (3, 'BAW100A'),
-    (4, 'BAW010');
+    (1, 'INFO3140'),
+    (3, 'INFO330A'),
+    (3, 'INFO449A'),
+    (2, 'BAW0100'),
+    (2, 'BAW100A'),
+    (4, 'BAW0100');
