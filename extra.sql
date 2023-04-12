@@ -12,4 +12,4 @@ CREATE TABLE schedule (
     FOREIGN KEY (roomid) REFERENCES room(id),
     FOREIGN KEY (timeslotid) REFERENCES timeslots(id));
   
-ALTER TABLE schedule ADD CONSTRAINT unique_room_time UNIQUE (roomid, timeslotid);
+ALTER TABLE schedule CONSTRAINT unique_room_time UNIQUE (roomid, timeslotid);
